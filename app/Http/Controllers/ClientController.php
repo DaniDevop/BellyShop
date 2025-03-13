@@ -3,13 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Product;
 class ClientController extends Controller
 {
 
 
-    public function index(){
 
+    public function detailsProduct($id){
+        $product=Product::find($id);
+        if(!$product){
+            flash()->warning("Produit introuvable ! ! !");
+            return back();
+        }
+        return view("client.details",[
+            'product'=>$product
+        ]);
+    }
+    public function index(){
+      
         return view("client.index");
     }
 

@@ -32,5 +32,6 @@ Route::middleware([AuthUserMiddleware::class])->group(function () {
      Route::get('/client-login',[ClientController::class,'login'])->name('client.login');
      Route::get('/client-cart',[ClientController::class,'cart'])->name('client.cart');
      Route::get('/client-historique-dashboard',[ClientController::class,'client'])->name('client.dashboard');
+     Route::get('/client-details-product/{id}',[ClientController::class,'detailsProduct'])->name('client.product.details');
 
 });
