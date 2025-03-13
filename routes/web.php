@@ -22,5 +22,6 @@ Route::middleware([AuthUserMiddleware::class])->group(function () {
      // Product Controller 
      Route::get('/product-store',[ProductController::class,'store'])->name('product.store');
      Route::post('/product-store-add',[ProductController::class,'addProduct'])->name('product.add.store');
+     Route::get('/product-store-liste',[ProductController::class,'index'])->name('product.liste.data');
 
 });

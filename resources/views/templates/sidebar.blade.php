@@ -5,7 +5,8 @@
                     <li class="py-2 px-3 hover:bg-blue-700 rounded cursor-pointer">Dashboard</li>
                     <li class="py-2 px-3 hover:bg-blue-700 rounded cursor-pointer">
                         <a href="{{route('supplier.list')}}">Fournisseurs</a></li>
-                    <li class="py-2 px-3 hover:bg-blue-700 rounded cursor-pointer">Produits</li>
+                    <li class="py-2 px-3 hover:bg-blue-700 rounded cursor-pointer">
+                    <a href="/product-store-liste">Produits</a> </li>
                     <li class="py-2 px-3 hover:bg-blue-700 rounded cursor-pointer">Commandes</li>
                     <li class="py-2 px-3 hover:bg-blue-700 rounded cursor-pointer">Paramètres</li>
                 </ul>

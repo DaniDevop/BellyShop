@@ -19,6 +19,13 @@ class ProductController extends Controller
         ]);
     }
 
+    public function index(){
+        $products=Product::paginate(5);
+        return view('product.index',[
+            'products'=>$products
+        ]);
+    }
+
     public function addProduct(ProductRequest $products){
 
         //dd($products);
